@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+input{
+    border: 2px solid grey;
+    border-radius: 4px;
+    height: 40px;
+
+}
+.navbar{
+    background-color: #212529 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler{
+    border: 0px !important;
+    border-radius: 4px !important;
+}
+.fa.fa-exchange{
+    cursor: pointer;
+}
+.col{
+    text-align: center;
+    font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cal-title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#sidenav{
+    display: none;
+}
+ul>li{
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#cal{ 
+display: grid;
+align-items: center;
+justify-content: center;
+    top: 30%;
+    left: 50%;
+    margin-top: 13%;
+    /* border: 2px solid black; */
+}
+#cal>h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nav-brand{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-brand:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width:500px){
+    nav{
+        height: 60px;
+    }
+    
+    #lnk{
+        position: absolute;
+        left: 100;
+        right: 0;
+        float: right;
+        text-align: center;
+    }
+    #foot{
+        height: 20px;
+        float: bottom;
+    }
 }
+#foot{
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    /* background-color: #212529; */
+    top: 100;
+    margin: 0 !important;
+    /* border: 2px solid red; */
+
+    padding: 0px !important;
+} 
+.cole{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+#ffoot
+{
+    /* padding: 50px 0px; */
+    /* margin-top: 100%; */
+    background-color: #212529;
+   border-top: 2px solid #212529;  
+    color: white;
+}  
+#ffoot a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    margin-right: 10px;
+}
+h3{
+    /* border:1px solid red; */
+    text-align: center;
+}
+.right-side{
+    color: white;
+width: 50%;
+display: inline-table;
+
+}
+.left-side{
+ display: inline-table;
+    color: white;
+width: 50%;
+}
+ul{list-style-type: none;}
+.right-side>ul>li>a,.left-side>ul>li>a{
+    color: white;
+    text-decoration: none;
+    /* list-style-type: none; */
+}
+.col{
+    font-size: 15px;
+}
+            
